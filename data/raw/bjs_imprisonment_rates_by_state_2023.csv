@@ -1,0 +1,51 @@
+state,state_abbr,imprisonment_rate_2023_all_ages,imprisonment_rate_2023_adult,source_url,extraction_method
+Alabama,AL,394,505,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Alaska,AK,202,266,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Arizona,AZ,448,568,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Arkansas,AR,596,773,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+California,CA,246,314,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Colorado,CO,290,364,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Connecticut,CT,183,229,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Delaware,DE,275,346,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Florida,FL,382,474,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Georgia,GA,449,582,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Hawaii,HI,165,207,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Idaho,ID,490,641,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Illinois,IL,238,303,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Indiana,IN,351,455,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Iowa,IA,274,354,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Kansas,KS,305,399,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Kentucky,KY,423,545,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Louisiana,LA,617,804,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Maine,ME,119,144,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Maryland,MD,261,334,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Massachusetts,MA,96,118,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Michigan,MI,328,415,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Minnesota,MN,152,196,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Mississippi,MS,652,847,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Missouri,MO,385,494,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Montana,MT,438,552,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Nebraska,NE,295,390,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Nevada,NV,327,415,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+New Hampshire,NH,151,183,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+New Jersey,NJ,125,160,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+New Mexico,NM,259,328,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+New York,NY,167,209,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+North Carolina,NC,275,350,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+North Dakota,ND,240,313,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Ohio,OH,394,504,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Oklahoma,OK,545,715,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Oregon,OR,291,361,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Pennsylvania,PA,300,376,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Rhode Island,RI,122,150,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+South Carolina,SC,299,380,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+South Dakota,SD,405,533,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Tennessee,TN,341,436,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Texas,TX,477,634,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Utah,UT,186,255,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Vermont,VT,124,150,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Virginia,VA,314,400,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Washington,WA,181,229,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+West Virginia,WV,328,409,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Wisconsin,WI,346,438,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7
+Wyoming,WY,378,484,https://bjs.ojp.gov/document/p23st.pdf,curated_fallback_from_bjs_table_7

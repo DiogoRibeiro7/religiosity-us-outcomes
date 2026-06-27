@@ -1,0 +1,51 @@
+state,state_abbr,firearm_death_rate_2024,source_url,extraction_method
+Alabama,AL,23.7,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Alaska,AK,24.4,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Arizona,AZ,16.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Arkansas,AR,20.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+California,CA,7.0,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Colorado,CO,15.3,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Connecticut,CT,5.8,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Delaware,DE,11.8,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Florida,FL,12.7,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Georgia,GA,17.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Hawaii,HI,3.7,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Idaho,ID,15.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Illinois,IL,12.4,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Indiana,IN,17.2,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Iowa,IA,11.8,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Kansas,KS,15.2,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Kentucky,KY,18.5,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Louisiana,LA,22.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Maine,ME,11.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Maryland,MD,11.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Massachusetts,MA,3.8,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Michigan,MI,11.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Minnesota,MN,9.8,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Mississippi,MS,28.0,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Missouri,MO,19.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Montana,MT,20.2,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Nebraska,NE,10.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Nevada,NV,17.2,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+New Hampshire,NH,10.2,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+New Jersey,NJ,4.0,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+New Mexico,NM,26.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+New York,NY,4.4,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+North Carolina,NC,16.3,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+North Dakota,ND,12.2,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Ohio,OH,14.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Oklahoma,OK,19.1,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Oregon,OR,14.2,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Pennsylvania,PA,11.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Rhode Island,RI,4.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+South Carolina,SC,19.5,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+South Dakota,SD,17.3,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Tennessee,TN,19.8,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Texas,TX,13.9,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Utah,UT,13.3,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Vermont,VT,10.6,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Virginia,VA,12.8,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Washington,WA,11.0,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+West Virginia,WV,15.3,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Wisconsin,WI,12.1,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data
+Wyoming,WY,23.4,https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/,pew_chart_table_data

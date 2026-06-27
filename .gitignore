@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Environment / secrets (e.g. CENSUS_API_KEY)
+.env
+*.key
+secrets*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Scratch / temp
+scratchpad/
+*.tmp

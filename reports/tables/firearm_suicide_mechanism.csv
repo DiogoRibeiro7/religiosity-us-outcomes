@@ -1,0 +1,4 @@
+model,r,p
+religiosity ~ firearm suicide (raw),-0.042982531568950696,0.7669383207982937
+... controlling gun ownership,-0.402918872634413,0.0037187796591065516
+... controlling gun ownership + covariates,0.02017844772022707,0.8893803028246163

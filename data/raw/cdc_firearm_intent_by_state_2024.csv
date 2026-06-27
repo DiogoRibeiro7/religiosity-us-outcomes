@@ -1,0 +1,51 @@
+state,state_abbr,firearm_total_rate_cdc_2024,firearm_homicide_rate_2024,firearm_suicide_rate_2024,gun_ownership_fss_proxy,source_url,extraction_method
+Alabama,AL,23.7,11.0,12.2,0.7431302270011948,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Alaska,AK,24.8,4.5,19.2,0.6351351351351351,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Arizona,AZ,17.9,4.4,12.6,0.6154353562005277,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Arkansas,AR,20.8,6.9,13.1,0.6790540540540541,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+California,CA,7.3,3.1,3.9,0.38040775733465937,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Colorado,CO,16.4,3.6,12.1,0.5422696115765423,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Connecticut,CT,6.2,1.9,4.1,0.37817258883248733,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Delaware,DE,11.9,4.8,6.9,0.568,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Florida,FL,14.1,3.9,9.9,0.6132672722268098,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Georgia,GA,18.0,7.4,10.1,0.6747572815533981,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Hawaii,HI,3.9,1.4,2.2,0.155,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Idaho,ID,16.8,1.3,14.6,0.6544622425629291,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Illinois,IL,12.5,6.9,5.2,0.45652173913043476,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Indiana,IN,17.4,5.5,11.2,0.6536170212765957,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Iowa,IA,12.1,2.1,9.9,0.5802919708029197,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Kansas,KS,15.2,4.2,10.7,0.5996204933586338,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Kentucky,KY,19.2,5.9,12.6,0.6777251184834123,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Louisiana,LA,22.5,12.3,9.7,0.6773700305810397,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Maine,ME,13.0,1.1,11.2,0.5508771929824562,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Maryland,MD,11.6,6.5,4.9,0.4793650793650794,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Massachusetts,MA,4.1,1.4,2.6,0.2839506172839506,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Michigan,MI,12.2,4.0,8.0,0.5531767955801105,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Minnesota,MN,10.1,2.5,7.3,0.5097799511002445,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Mississippi,MS,27.6,16.0,10.6,0.6955555555555556,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Missouri,MO,19.9,7.4,11.8,0.6336805555555556,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Montana,MT,21.8,2.2,18.7,0.6625,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Nebraska,NE,11.0,2.2,8.6,0.5723905723905723,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Nevada,NV,18.2,5.3,12.6,0.5946745562130178,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+New Hampshire,NH,10.8,0.8,9.5,0.5362903225806451,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+New Jersey,NJ,4.2,1.8,2.4,0.3255131964809384,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+New Mexico,NM,26.6,9.7,15.0,0.5958646616541353,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+New York,NY,4.6,1.8,2.6,0.29570840681951793,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+North Carolina,NC,16.9,6.3,9.8,0.6537037037037037,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+North Dakota,ND,12.1,1.4,10.3,0.5586206896551724,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Ohio,OH,14.8,4.9,9.5,0.6007543103448276,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Oklahoma,OK,19.6,5.0,13.8,0.6451612903225806,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Oregon,OR,15.7,2.8,12.4,0.5568544102019128,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Pennsylvania,PA,12.5,3.9,8.3,0.5848238482384824,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Rhode Island,RI,5.0,1.1,3.8,0.4,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+South Carolina,SC,19.8,7.8,11.4,0.6769911504424779,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+South Dakota,SD,17.3,3.2,12.7,0.5909090909090909,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Tennessee,TN,20.3,8.1,11.5,0.6639544344995931,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Texas,TX,14.4,4.8,9.1,0.6189309576837416,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Utah,UT,13.3,1.7,11.1,0.5684210526315789,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Vermont,VT,11.7,1.9,9.4,0.580952380952381,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Virginia,VA,13.2,4.5,8.4,0.6095317725752508,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Washington,WA,11.7,3.0,8.3,0.5298935298935299,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+West Virginia,WV,15.9,3.6,11.5,0.66996699669967,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Wisconsin,WI,12.4,3.5,8.6,0.5510869565217391,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
+Wyoming,WY,24.5,1.9,21.1,0.727810650887574,"https://data.cdc.gov/resource/fpsi-y8tj.json (intent split, period 2024)",cdc_socrata_fpsi_y8tj
