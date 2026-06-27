@@ -1,138 +1,157 @@
-# U.S. Religiosity and Social Outcomes
+# U.S. Religiosity and State-Level Social Outcomes
 
-This is a small data science project to test the state-level claim:
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+![Jupyter](https://img.shields.io/badge/built%20with-Jupyter-orange)
+![Models](https://img.shields.io/badge/models-OLS%20%7C%20MixedLM%20%7C%20Bayesian-success)
+![Data](https://img.shields.io/badge/data-public%20%26%20reproducible-brightgreen)
 
-> More religious U.S. states have higher rates of gun violence, illiteracy, obesity, and incarceration.
+A small, reproducible data-science project that tests a popular state-level claim:
 
-The project is deliberately written as notebooks, not as a package. It extracts public data, transforms it into a clean state-level analytical table, and runs exploratory and statistical analysis.
+> *More religious U.S. states have higher rates of gun violence, illiteracy, obesity, and incarceration.*
 
-The main point is **association**, not causation. The notebooks can show whether the claim is supported by state-level correlations. They do not prove that religion itself causes the outcomes.
+It extracts public data, builds one clean row per state, and works up from simple correlations to **covariate-adjusted, hierarchical, and Bayesian models**. The point throughout is **association, not causation** — and the headline result is a case study in why that distinction matters.
 
-## Notebooks
+---
 
-Run the notebooks in this order:
+## TL;DR — what the data says
 
-1. `notebooks/01_extract_public_data.ipynb`
-   - Downloads or scrapes the raw data.
-   - Saves files under `data/raw/`.
-   - Sources:
-     - Pew Research Center Religious Landscape Study state pages.
-     - Pew Research Center analysis of CDC WONDER firearm mortality data.
-     - CDC adult obesity BRFSS CSV.
-     - Bureau of Justice Statistics `Prisoners in 2023` PDF.
-     - NCES / PIAAC Skills Map through ArcGIS Open Data (literacy/numeracy **and** the socioeconomic covariates).
-     - CDC *Mapping Injury, Overdose, and Violence* (Socrata `fpsi-y8tj`) for firearm deaths split by intent and a gun-ownership proxy.
-     - Census county Gazetteer for state land area (used to build a population-density / urbanicity control).
+**As a description of states, the claim holds. As a claim about religion itself, it mostly doesn't.**
 
-2. `notebooks/02_transform_state_panel.ipynb`
-   - Cleans the raw files.
-   - Standardises state names and abbreviations.
-   - Builds one row per state.
-   - Saves `data/processed/state_religiosity_outcomes.csv`.
+- Every bivariate association runs in the predicted direction and is statistically robust (survives FDR correction; every bootstrap 95% CI excludes zero).
+- But religiosity is tightly bound to disadvantage — more religious states are poorer, less educated, and demographically different (r with % Black = 0.57, poverty = 0.49, low-education = 0.49).
+- **Adjusting for region** removes the firearm, obesity, and imprisonment associations. **Adjusting further for socioeconomics** removes essentially everything else — *including literacy and numeracy*, which had survived the region-only adjustment.
+- The "gun violence" signal is specifically firearm **homicide** (r = +0.53), not suicide (r = −0.04) — and even that is fully explained by socioeconomics, not by gun ownership.
+- A `MixedLM` and a **PyMC Bayesian** multilevel model agree: after full adjustment, **no** outcome has a religiosity coefficient whose 94% credible interval excludes zero. **Obesity** is the only fragile exception.
 
-3. `notebooks/03_analyse_religiosity_outcomes.ipynb`
-   - **Part 1 (descriptive):** missingness checks, Pearson/Spearman correlations, scatter plots, simple OLS, and region-adjusted OLS.
-   - **Part 2 (deeper analysis):** distributions, a full correlation heatmap, regional boxplots, region-coloured scatters, religiosity-vs-confounder checks, **covariate-adjusted regressions**, a model-comparison forest plot, partial correlations, multiple-comparison (FDR) control, bootstrap CIs, influence diagnostics, the **firearm homicide-vs-suicide** split with a gun-ownership analysis, and a **hierarchical (MixedLM) model by region**.
-   - Exports tables and plots to `reports/`.
+Standardised religiosity coefficient (β, in SD units) as controls are added — it collapses toward zero almost everywhere:
+
+| Outcome | simple | + region | + covariates | + region & cov |
+|---|---:|---:|---:|---:|
+| Firearm deaths (total) | 0.30\* | 0.09 | 0.03 | 0.03 |
+| Firearm **homicide** | 0.53\* | 0.24 | 0.02 | −0.03 |
+| Firearm **suicide** | −0.04 | −0.13 | −0.05 | −0.01 |
+| Adult obesity | 0.54\* | 0.16 | **0.32\*** | 0.09 |
+| Literacy | −0.51\* | −0.46\* | −0.05 | −0.08 |
+| Numeracy | −0.53\* | −0.45\* | −0.05 | −0.07 |
+| Imprisonment | 0.48\* | 0.20 | 0.01 | −0.04 |
+
+<sub>\* p < 0.05. Full tables in [`reports/tables/`](reports/tables/).</sub>
+
+![Model comparison forest plot](reports/figures/model_comparison_forest.png)
+
+---
+
+## The pipeline
+
+Three notebooks, run in order. They are deliberately notebooks, not a package, so each step is readable and inspectable.
+
+| # | Notebook | What it does |
+|---|----------|--------------|
+| 1 | [`notebooks/01_extract_public_data.ipynb`](notebooks/01_extract_public_data.ipynb) | Downloads/scrapes the raw public data into `data/raw/`. Defensive fetching with retries and cached fallbacks. |
+| 2 | [`notebooks/02_transform_state_panel.ipynb`](notebooks/02_transform_state_panel.ipynb) | Cleans, standardises state names, validates, and merges everything into one row per state → `data/processed/state_religiosity_outcomes.csv`. |
+| 3 | [`notebooks/03_analyse_religiosity_outcomes.ipynb`](notebooks/03_analyse_religiosity_outcomes.ipynb) | The analysis (see below). Exports tables/figures to `reports/`. |
+
+**Notebook 03, Part 1 (descriptive):** missingness, Pearson/Spearman correlations, scatter plots, simple OLS, region-adjusted OLS.
+
+**Notebook 03, Part 2 (deeper analysis):** distributions, a full correlation heatmap, regional boxplots, region-coloured scatters, religiosity-vs-confounder checks, **covariate-adjusted regressions**, a model-comparison forest plot, partial correlations, FDR multiple-comparison control, bootstrap CIs, influence diagnostics, the **firearm homicide-vs-suicide split** with a gun-ownership analysis, a **hierarchical `MixedLM` model**, and a **Bayesian multilevel model (PyMC)**.
+
+### Data sources
+
+- **Pew Research Center** Religious Landscape Study state pages (religious affiliation).
+- **Pew Research Center** analysis of CDC WONDER firearm mortality (total firearm rate).
+- **CDC** adult obesity (BRFSS) CSV.
+- **CDC** *Mapping Injury, Overdose, and Violence* (Socrata `fpsi-y8tj`) — firearm deaths split by intent + gun-ownership proxy.
+- **Bureau of Justice Statistics** *Prisoners in 2023* (imprisonment rates).
+- **NCES / PIAAC** Skills Map via ArcGIS Open Data (literacy, numeracy, and the socioeconomic covariates).
+- **U.S. Census** county Gazetteer (land area → population density).
 
 ## How religiosity is measured
-
-The default measure is:
 
 ```text
 religiously_affiliated_pct = 100 - religiously_unaffiliated_pct
 ```
 
-The unaffiliated share is extracted from Pew state pages by summing:
-
-```text
-Atheist + Agnostic + Nothing in particular
-```
-
-This is a practical, current, state-level proxy for religious affiliation. It is not exactly the same as Pew's older "highly religious" index, which combined belief, prayer, attendance, and importance of religion.
-
-The analysis notebook is written so that you can swap in another religiosity measure later.
+The unaffiliated share is extracted from Pew state pages as `Atheist + Agnostic + Nothing in particular`. This is a practical, current, state-level proxy for affiliation — not the same as Pew's older "highly religious" index (belief + prayer + attendance + importance). The analysis is written so another religiosity measure can be swapped in.
 
 ## Outcomes
 
-The current analytical table uses:
-
-- Firearm mortality rate per 100,000 people, age-adjusted, 2024 — plus the **firearm homicide** and **firearm suicide** rates separately (CDC, 2024).
-- Adult obesity prevalence, 2024.
-- Literacy and **numeracy** average scores from PIAAC/NCES.
-- Imprisonment rate per 100,000 residents, 2023.
+- Firearm mortality per 100,000 (age-adjusted, 2024) — plus **firearm homicide** and **firearm suicide** separately (CDC, 2024).
+- Adult obesity prevalence (2024).
+- Literacy and **numeracy** average scores (PIAAC/NCES).
+- Imprisonment rate per 100,000 residents (2023).
 
 ## Covariates (confounders)
 
-The analytical table also carries candidate confounders, used by the Part 2 models in notebook 03:
+Carried in the panel and used by the Part 2 models to test whether religiosity predicts outcomes *independently* of socioeconomics:
 
-- Poverty rate, share with less than a high-school education, unemployment, uninsured share, SNAP receipt, % Black, % Hispanic (PIAAC/NCES).
+- Poverty, less-than-high-school share, unemployment, uninsured share, SNAP, % Black, % Hispanic (PIAAC/NCES).
 - A household **gun-ownership proxy** (FS/S = firearm suicides ÷ all suicides; CDC).
-- **Population density** (state population ÷ Census land area) as an urbanicity proxy.
+- **Population density** (population ÷ Census land area) as an urbanicity proxy.
 
-These let the analysis test whether religiosity predicts the outcomes *independently* of socioeconomics — not just whether it correlates with them.
+## Selected figures
+
+| | |
+|---|---|
+| ![Correlation heatmap](reports/figures/correlation_heatmap.png) | ![Firearm intent](reports/figures/firearm_intent_mechanism.png) |
+| Correlation matrix of religiosity, outcomes, and confounders | The firearm total hides a homicide-vs-suicide story |
+
+All figures live in [`reports/figures/`](reports/figures/) and all result tables in [`reports/tables/`](reports/tables/).
 
 ## Setup
 
-Create a clean environment and install:
-
 ```bash
 python -m venv .venv
-source .venv/bin/activate
-pip install pandas numpy requests beautifulsoup4 lxml matplotlib scipy statsmodels tqdm pdfplumber nbformat
+source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
+pip install pandas numpy requests beautifulsoup4 lxml matplotlib scipy \
+            statsmodels tqdm pdfplumber nbformat pymc arviz
 ```
 
-On Windows:
+Then run the three notebooks in order (e.g. `jupyter lab`, or
+`jupyter nbconvert --to notebook --execute --inplace notebooks/0*.ipynb`).
 
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install pandas numpy requests beautifulsoup4 lxml matplotlib scipy statsmodels tqdm pdfplumber nbformat
-```
+### Reproducibility notes
 
-## Project structure after running
+- Notebook 01 talks to several live sources. Each extractor **retries**, then **falls back to a cached CSV** in `data/raw/`, and validates that it ends with exactly 50 states — so the pipeline is reproducible and survives a flaky source.
+- The committed `data/` and `reports/` let you read the results without re-running anything.
+- Adding median income and median age requires a free [Census API key](https://api.census.gov/data/key_signup.html) in a `CENSUS_API_KEY` environment variable (see roadmap).
+
+## Project structure
 
 ```text
 .
 ├── README.md
-├── notebooks
-│   ├── 01_extract_public_data.ipynb
-│   ├── 02_transform_state_panel.ipynb
-│   └── 03_analyse_religiosity_outcomes.ipynb
-├── data
-│   ├── raw
-│   └── processed
-└── reports
-    ├── figures
-    └── tables
+├── notebooks/        # 01 extract · 02 transform · 03 analyse
+├── data/
+│   ├── raw/          # snapshots from each public source
+│   └── processed/    # state_religiosity_outcomes.csv (the analytical panel)
+└── reports/
+    ├── figures/      # all plots
+    └── tables/       # all result tables (correlations, models, bootstrap, …)
 ```
 
-## Interpretation guide
+## Interpretation & caveats
 
-The analysis should be read carefully:
+- **Ecological fallacy.** These are 50-state correlations. They say nothing about whether religious *individuals* are more violent, less literate, more obese, or more likely to be incarcerated.
+- **Confounding is the whole story.** The headline associations are mostly explained by region and socioeconomics — and the covariate set is still incomplete (no income, age structure, or direct gun-ownership survey).
+- **Measurement.** Religiosity is proxied by current affiliation; "illiteracy" by an average PIAAC score; gun ownership by the FS/S proxy.
+- **Small n.** With 50 observations and many correlated predictors, estimates are noisy and standard errors inflate in the fullest models.
 
-- A positive correlation between religiosity and firearm mortality means more religious states tend to have higher firearm mortality.
-- A negative correlation between religiosity and literacy score means more religious states tend to have lower average literacy scores.
-- These are ecological state-level relationships. They do not imply that religious individuals are more violent, less literate, more obese, or more likely to be incarcerated.
-- State-level religiosity is correlated with region, rurality, poverty, education, race, policy, public health access, and historical inequality. Those variables matter.
+## Roadmap / status
 
-**What the Part 2 analysis found:** the bivariate associations are all real and statistically robust *as descriptions of states*, but they are largely **confounded**. Adjusting for Census region removes the firearm, obesity, and imprisonment associations; adjusting further for socioeconomic covariates (poverty, education, race composition, density) removes essentially everything else — including literacy and numeracy, which had survived the region-only adjustment. The "gun violence" signal is specifically firearm **homicide** (not suicide), and even that is fully explained by socioeconomics rather than by gun ownership. Obesity is the only outcome that retains a modest, fragile association after adjustment. See the conclusion in notebook 03 for details.
+**Done**
 
-## Suggested extensions (status)
+- ✅ Controls for poverty, education, race/ethnicity, unemployment, insurance, and urbanisation (density).
+- ✅ Firearm homicide separated from firearm suicide, plus a gun-ownership proxy.
+- ✅ Hierarchical random-intercept model (`statsmodels` MixedLM).
+- ✅ Bayesian multilevel model with covariates (`PyMC`).
 
-Done in this version:
+**Open**
 
-- ✅ Controls for poverty, education, race/ethnicity, unemployment, insurance, and urbanisation (population density).
-- ✅ Firearm homicide separated from firearm suicide.
-- ✅ A household gun-ownership proxy (FS/S ratio).
-- ✅ A hierarchical (random-intercept by region) model via `statsmodels` MixedLM.
-
-Still open (need extra data or libraries):
-
-- Add median household income and median age (Census ACS — needs a free API key).
-- Compare religious affiliation with a religious **practice-intensity** measure (parse the Pew state-page practice charts).
-- Full **Bayesian** hierarchical model by region (`PyMC`, not currently installed).
+- Median household income and median age (Census ACS — needs a free API key).
+- A religious **practice-intensity** measure (the Pew pages don't expose the practice numbers in a scrapable form; needs the RLS microdata).
 - **County-level** analysis (needs a county religiosity source such as the ARDA / U.S. Religion Census).
 - Robustness checks across multiple religiosity measures.
 
+---
 
+<sub>Built as an exercise in careful, honest ecological analysis. Data are public; see each extractor in notebook 01 for exact source URLs.</sub>
