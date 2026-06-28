@@ -26,3 +26,5 @@ gun_ownership_pct_proxy,0,0.0
 population_density,0,0.0
 median_household_income,0,0.0
 median_age,0,0.0
+centroid_lat,0,0.0
+centroid_lon,0,0.0

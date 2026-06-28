@@ -1,51 +1,51 @@
-state,state_abbr,land_area_sqmi,source_url
-Alabama,AL,50650.834,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Alaska,AK,571051.6410000001,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Arizona,AZ,113655.393,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Arkansas,AR,51992.701,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-California,CA,155859.14,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Colorado,CO,103637.064,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Connecticut,CT,4842.397,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Delaware,DE,1948.5439999999999,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Florida,FL,53654.210999999996,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Georgia,GA,57716.602,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Hawaii,HI,6422.588,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Idaho,ID,82645.128,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Illinois,IL,55513.143,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Indiana,IN,35825.116,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Iowa,IA,55853.263,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Kansas,KS,81758.593,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Kentucky,KY,39485.36,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Louisiana,LA,43216.591,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Maine,ME,30845.04,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Maryland,MD,9711.141,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Massachusetts,MA,7800.941,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Michigan,MI,56610.281,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Minnesota,MN,79631.472,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Mississippi,MS,46924.358,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Missouri,MO,68746.366,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Montana,MT,145550.167,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Nebraska,NE,76814.874,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Nevada,NV,109860.371,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-New Hampshire,NH,8953.759,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-New Jersey,NJ,7354.934,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-New Mexico,NM,121312.759,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-New York,NY,47123.414,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-North Carolina,NC,48624.119,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-North Dakota,ND,68994.274,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Ohio,OH,40858.808,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Oklahoma,OK,68596.64,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Oregon,OR,95996.747,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Pennsylvania,PA,44742.225,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Rhode Island,RI,1033.892,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-South Carolina,SC,30064.23,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-South Dakota,SD,75807.888,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Tennessee,TN,41232.744,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Texas,TX,261270.027,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Utah,UT,82595.692,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Vermont,VT,9217.258,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Virginia,VA,39482.095,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Washington,WA,66455.433,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-West Virginia,WV,24041.234,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Wisconsin,WI,54167.286,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
-Wyoming,WY,97088.542,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+state,state_abbr,land_area_sqmi,centroid_lat,centroid_lon,source_url
+Alabama,AL,50650.833999999995,32.75980031063939,-86.83022566328202,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Alaska,AK,571051.6410000001,63.72616927822913,-149.83621828732598,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Arizona,AZ,113655.39300000001,34.26932073810286,-111.66666798283269,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Arkansas,AR,51992.70099999999,34.891137460364206,-92.44226348000103,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+California,CA,155859.14,37.14777077120319,-119.54692509370761,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Colorado,CO,103637.06400000001,38.9738355396521,-105.55005313816993,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Connecticut,CT,4842.397000000001,41.60747932269142,-72.72343764620351,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Delaware,DE,1948.5439999999999,38.998217195436695,-75.45413350064973,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Florida,FL,53654.211,28.63140387089787,-82.51221633056636,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Georgia,GA,57716.602,32.63236212163609,-83.44649655456541,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Hawaii,HI,6422.588,20.235659143628396,-156.36216711939284,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Idaho,ID,82645.12800000001,44.338196020600776,-114.63715756232497,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Illinois,IL,55513.143000000004,40.04092576754413,-89.18903415199996,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Indiana,IN,35825.116,39.89446118690686,-86.27813763598593,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Iowa,IA,55853.26299999999,42.06568676510471,-93.50315745683397,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Kansas,KS,81758.59300000001,38.47405628684008,-98.39090265273676,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Kentucky,KY,39485.36,37.52455864713486,-85.27292056922218,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Louisiana,LA,43216.591,31.101398043410455,-92.04790576912652,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Maine,ME,30845.039999999997,45.37722939416548,-69.20875714923592,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Maryland,MD,9711.141,39.03737738513415,-76.80511735678176,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Massachusetts,MA,7800.941,42.246804003243454,-71.80535737146582,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Michigan,MI,56610.280999999995,44.30960905699828,-85.41441899625477,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Minnesota,MN,79631.47199999998,46.22162993185718,-94.32345387314886,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Mississippi,MS,46924.358,32.72636387474236,-89.66135281270084,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Missouri,MO,68746.36600000001,38.34769991867055,-92.46729614639138,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Montana,MT,145550.16700000002,46.99872454134278,-109.63317620969933,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Nebraska,NE,76814.87400000001,41.51789659624425,-99.79662159627972,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Nevada,NV,109860.371,39.306395766825354,-116.6302451569307,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+New Hampshire,NH,8953.759,43.67113669681583,-71.58155761414417,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+New Jersey,NJ,7354.934,40.18302631181109,-74.66282814755577,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+New Mexico,NM,121312.759,34.3917992686213,-106.11120213827508,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+New York,NY,47123.41400000001,42.940902028380364,-75.5375601561822,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+North Carolina,NC,48624.119,35.53544013258932,-79.38625285223867,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+North Dakota,ND,68994.274,47.42661916628417,-100.46301047209461,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Ohio,OH,40858.808000000005,40.28798491078925,-82.79166001952264,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Oklahoma,OK,68596.64000000001,35.57662203849786,-97.5251043105165,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Oregon,OR,95996.74699999999,43.920458676643364,-120.55661912033246,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Pennsylvania,PA,44742.225,40.870772183662005,-77.80622826929275,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Rhode Island,RI,1033.892,41.6470626597778,-71.55606590624649,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+South Carolina,SC,30064.230000000003,33.91091247962745,-80.89140067285173,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+South Dakota,SD,75807.888,44.418501902796606,-100.23767402209037,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Tennessee,TN,41232.744000000006,35.83784506065495,-86.35207940343153,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Texas,TX,261270.027,31.443009407677117,-99.37686796765263,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Utah,UT,82595.69200000001,39.25819125725016,-111.65637160859437,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Vermont,VT,9217.258000000002,44.053982952742565,-72.65614827660298,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Virginia,VA,39482.095,37.510139088019265,-78.85876504010527,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Washington,WA,66455.433,47.37151923220737,-120.45414922777755,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+West Virginia,WV,24041.234,38.63279844607902,-80.61748632651444,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Wisconsin,WI,54167.28600000001,44.623798572826644,-89.98922103796441,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip
+Wyoming,WY,97088.54200000002,42.98118123946853,-107.53249163170973,https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_counties_national.zip

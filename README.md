@@ -155,13 +155,13 @@ Every column in the analytical panel is documented in [`docs/DATA_DICTIONARY.md`
 - Covariate-adjusted regressions, partial correlations, FDR control, bootstrap CIs, influence diagnostics.
 - **Hierarchical** `MixedLM` and **Bayesian** (`PyMC`) multilevel models.
 - **Robustness** across religiosity operationalisations (affiliated / atheist / agnostic / "nothing in particular").
-- **Diagnostics & sensitivity** (Part 3): VIF multicollinearity, religiosity × region interactions, a cross-validated **LASSO** variable-selection check, and a missing-obesity imputation sensitivity test.
+- **Diagnostics & sensitivity** (Part 3): VIF multicollinearity, religiosity × region interactions, **LASSO / ridge / elastic-net** variable selection, a missing-obesity imputation sensitivity test, and a **spatial-autocorrelation (Moran's I)** check showing the model residuals carry no leftover geographic signal.
 - Repo: data dictionary, pinned `requirements.txt`, MIT license.
 
 ### 🔜 Refinements (no new data needed — open to PRs)
 
-- Spatial autocorrelation diagnostics (e.g. Moran's I on residuals).
-- Alternative penalties (ridge / elastic-net) and outcome transformations.
+- Explicit spatial models (geographically-weighted regression, or a CAR/SAR spatial-error model).
+- Alternative outcome transformations / functional forms.
 
 ### ⛔ Blocked on external data (drop the file in `data/raw/` and it can be wired up)
 

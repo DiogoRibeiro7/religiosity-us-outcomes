@@ -1,5 +1,5 @@
 model,r,p
 religiosity ~ firearm homicide (raw),0.5249654130370123,9.079965009613309e-05
 ... controlling gun ownership,0.48008426934583615,0.0004184289052831454
-... controlling socioeconomic covariates,-0.12026835601115068,0.4054417487475861
-... controlling gun ownership + covariates,-0.08859540102814925,0.5406541977158268
+... controlling socioeconomic covariates,-0.12026835601115048,0.4054417487475863
+... controlling gun ownership + covariates,-0.08859540102814896,0.5406541977158301
