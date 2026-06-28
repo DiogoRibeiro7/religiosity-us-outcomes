@@ -21,19 +21,19 @@ It extracts public data, builds one clean row per state, and works up from simpl
 - But religiosity is tightly bound to disadvantage — more religious states are poorer, less educated, and demographically different (r with % Black = 0.57, poverty = 0.49, low-education = 0.49).
 - **Adjusting for region** removes the firearm, obesity, and imprisonment associations. **Adjusting further for socioeconomics** removes essentially everything else — *including literacy and numeracy*, which had survived the region-only adjustment.
 - The "gun violence" signal is specifically firearm **homicide** (r = +0.53), not suicide (r = −0.04) — and even that is fully explained by socioeconomics, not by gun ownership.
-- A `MixedLM` and a **PyMC Bayesian** multilevel model agree: after full adjustment, **no** outcome has a religiosity coefficient whose 94% credible interval excludes zero. **Obesity** is the only fragile exception.
+- A `MixedLM` and a **PyMC Bayesian** multilevel model agree: after full adjustment, **no** outcome has a religiosity coefficient whose 94% credible interval excludes zero. Obesity was the last holdout, but it too disappears once **median income and median age** are added to the controls.
 
-Standardised religiosity coefficient (β, in SD units) as controls are added — it collapses toward zero almost everywhere:
+Standardised religiosity coefficient (β, in SD units) as controls are added — it collapses toward zero everywhere:
 
 | Outcome | simple | + region | + covariates | + region & cov |
 |---|---:|---:|---:|---:|
-| Firearm deaths (total) | 0.30\* | 0.09 | 0.03 | 0.03 |
-| Firearm **homicide** | 0.53\* | 0.24 | 0.02 | −0.03 |
-| Firearm **suicide** | −0.04 | −0.13 | −0.05 | −0.01 |
-| Adult obesity | 0.54\* | 0.16 | **0.32\*** | 0.09 |
-| Literacy | −0.51\* | −0.46\* | −0.05 | −0.08 |
-| Numeracy | −0.53\* | −0.45\* | −0.05 | −0.07 |
-| Imprisonment | 0.48\* | 0.20 | 0.01 | −0.04 |
+| Firearm deaths (total) | 0.30\* | 0.09 | −0.11 | −0.10 |
+| Firearm **homicide** | 0.53\* | 0.24 | −0.08 | −0.09 |
+| Firearm **suicide** | −0.04 | −0.13 | −0.15 | −0.14 |
+| Adult obesity | 0.54\* | 0.16 | 0.07 | 0.01 |
+| Literacy | −0.51\* | −0.46\* | −0.02 | −0.04 |
+| Numeracy | −0.53\* | −0.45\* | −0.00 | −0.02 |
+| Imprisonment | 0.48\* | 0.20 | −0.10 | −0.14 |
 
 <sub>\* p < 0.05. Full tables in [`reports/tables/`](reports/tables/).</sub>
 
@@ -63,7 +63,7 @@ Three notebooks, run in order. They are deliberately notebooks, not a package, s
 - **CDC** *Mapping Injury, Overdose, and Violence* (Socrata `fpsi-y8tj`) — firearm deaths split by intent + gun-ownership proxy.
 - **Bureau of Justice Statistics** *Prisoners in 2023* (imprisonment rates).
 - **NCES / PIAAC** Skills Map via ArcGIS Open Data (literacy, numeracy, and the socioeconomic covariates).
-- **U.S. Census** county Gazetteer (land area → population density).
+- **U.S. Census** county Gazetteer (land area → population density) and the **ACS 1-year** API (median household income, median age).
 
 ## How religiosity is measured
 
@@ -87,6 +87,7 @@ Carried in the panel and used by the Part 2 models to test whether religiosity p
 - Poverty, less-than-high-school share, unemployment, uninsured share, SNAP, % Black, % Hispanic (PIAAC/NCES).
 - A household **gun-ownership proxy** (FS/S = firearm suicides ÷ all suicides; CDC).
 - **Population density** (population ÷ Census land area) as an urbanicity proxy.
+- **Median household income** and **median age** (Census ACS 1-year 2023).
 
 ## Selected figures
 
@@ -144,10 +145,10 @@ Then run the three notebooks in order (e.g. `jupyter lab`, or
 - ✅ Firearm homicide separated from firearm suicide, plus a gun-ownership proxy.
 - ✅ Hierarchical random-intercept model (`statsmodels` MixedLM).
 - ✅ Bayesian multilevel model with covariates (`PyMC`).
+- ✅ Median household income and median age (Census ACS — set `CENSUS_API_KEY`).
 
 **Open**
 
-- Median household income and median age (Census ACS — needs a free API key).
 - A religious **practice-intensity** measure (the Pew pages don't expose the practice numbers in a scrapable form; needs the RLS microdata).
 - **County-level** analysis (needs a county religiosity source such as the ARDA / U.S. Religion Census).
 - Robustness checks across multiple religiosity measures.

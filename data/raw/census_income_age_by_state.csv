@@ -1,0 +1,51 @@
+state,state_abbr,median_household_income,median_age,source_url,extraction_method
+Alabama,AL,62212.0,39.6,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Alaska,AK,86631.0,36.5,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Arizona,AZ,77315.0,39.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Arkansas,AR,58700.0,38.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+California,CA,95521.0,38.2,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Colorado,CO,92911.0,37.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Connecticut,CT,91665.0,41.5,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Delaware,DE,81361.0,42.0,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Florida,FL,73311.0,42.8,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Georgia,GA,74632.0,37.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Hawaii,HI,95322.0,41.4,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Idaho,ID,74942.0,37.8,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Illinois,IL,80306.0,39.5,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Indiana,IN,69477.0,38.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Iowa,IA,71433.0,39.1,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Kansas,KS,70333.0,37.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Kentucky,KY,61118.0,39.2,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Louisiana,LA,58229.0,38.7,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Maine,ME,73733.0,44.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Maryland,MD,98678.0,39.8,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Massachusetts,MA,99858.0,40.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Michigan,MI,69183.0,40.5,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Minnesota,MN,85086.0,39.1,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Mississippi,MS,54203.0,39.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Missouri,MO,68545.0,39.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Montana,MT,70804.0,40.6,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Nebraska,NE,74590.0,37.4,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Nevada,NV,76364.0,39.4,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+New Hampshire,NH,96838.0,43.4,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+New Jersey,NJ,99781.0,40.4,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+New Mexico,NM,62268.0,39.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+New York,NY,82095.0,40.2,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+North Carolina,NC,70804.0,39.4,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+North Dakota,ND,76525.0,36.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Ohio,OH,67769.0,39.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Oklahoma,OK,62138.0,37.1,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Oregon,OR,80160.0,40.7,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Pennsylvania,PA,73824.0,41.1,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Rhode Island,RI,84972.0,40.8,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+South Carolina,SC,67804.0,40.5,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+South Dakota,SD,71810.0,38.5,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Tennessee,TN,67631.0,39.1,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Texas,TX,75780.0,35.9,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Utah,UT,93421.0,32.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Vermont,VT,81211.0,43.7,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Virginia,VA,89931.0,39.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Washington,WA,94605.0,38.6,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+West Virginia,WV,55948.0,42.8,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Wisconsin,WI,74631.0,40.5,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
+Wyoming,WY,72415.0,39.3,https://api.census.gov/data/2023/acs/acs1 (ACS 1-year 2023),census_acs_api
