@@ -122,6 +122,10 @@ Then run the three notebooks in order (e.g. `jupyter lab`, or
 ```text
 .
 ├── README.md
+├── LICENSE
+├── requirements.txt
+├── docs/
+│   └── DATA_DICTIONARY.md   # every panel column: units, range, source
 ├── notebooks/        # 01 extract · 02 transform · 03 analyse
 ├── data/
 │   ├── raw/          # snapshots from each public source
@@ -130,6 +134,8 @@ Then run the three notebooks in order (e.g. `jupyter lab`, or
     ├── figures/      # all plots
     └── tables/       # all result tables (correlations, models, bootstrap, …)
 ```
+
+Every column in the analytical panel is documented in [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md).
 
 ## Interpretation & caveats
 
