@@ -140,25 +140,35 @@ Every column in the analytical panel is documented in [`docs/DATA_DICTIONARY.md`
 ## Interpretation & caveats
 
 - **Ecological fallacy.** These are 50-state correlations. They say nothing about whether religious *individuals* are more violent, less literate, more obese, or more likely to be incarcerated.
-- **Confounding is the whole story.** The headline associations are mostly explained by region and socioeconomics — and the covariate set is still incomplete (no income, age structure, or direct gun-ownership survey).
+- **Confounding is the whole story.** The headline associations are fully explained by region and socioeconomics. The covariate set is now fairly rich (poverty, education, income, age, race, density), though it still omits a direct gun-ownership survey and policy variables.
 - **Measurement.** Religiosity is proxied by current affiliation; "illiteracy" by an average PIAAC score; gun ownership by the FS/S proxy.
 - **Small n.** With 50 observations and many correlated predictors, estimates are noisy and standard errors inflate in the fullest models.
 
-## Roadmap / status
+## Roadmap
 
-**Done**
+### ✅ Done
 
-- ✅ Controls for poverty, education, race/ethnicity, unemployment, insurance, and urbanisation (density).
-- ✅ Firearm homicide separated from firearm suicide, plus a gun-ownership proxy.
-- ✅ Hierarchical random-intercept model (`statsmodels` MixedLM).
-- ✅ Bayesian multilevel model with covariates (`PyMC`).
-- ✅ Median household income and median age (Census ACS — set `CENSUS_API_KEY`).
-- ✅ Robustness across multiple religiosity operationalisations (affiliated / atheist / agnostic / "nothing in particular").
+- Reproducible three-stage pipeline (extract → transform → analyse) with retries and cached fallbacks.
+- Descriptive layer: Pearson/Spearman correlations, scatter plots, simple and region-adjusted OLS.
+- Socioeconomic covariates: poverty, education, unemployment, insurance, SNAP, % Black, % Hispanic, density, **median income**, **median age**.
+- Firearm deaths split into **homicide vs suicide** + an FS/S **gun-ownership proxy**.
+- Covariate-adjusted regressions, partial correlations, FDR control, bootstrap CIs, influence diagnostics.
+- **Hierarchical** `MixedLM` and **Bayesian** (`PyMC`) multilevel models.
+- **Robustness** across religiosity operationalisations (affiliated / atheist / agnostic / "nothing in particular").
+- Repo: data dictionary, pinned `requirements.txt`, MIT license.
 
-**Open** (blocked on data access)
+### 🔜 Refinements (no new data needed — open to PRs)
 
-- A religious **practice-intensity** measure — Pew does not expose the attendance/prayer/importance numbers in a machine-readable form (the live pages 403 or render via JS; would need the RLS microdata).
-- **County-level** analysis — needs a county religiosity source such as the ARDA / U.S. Religion Census (manual download, not an open API).
+- Multicollinearity diagnostics (VIF) for the fullest models.
+- Religiosity × region interaction terms.
+- Penalised / variable-selection models (LASSO, elastic-net) as a cross-check.
+- Sensitivity analysis for the single missing obesity value (Tennessee).
+
+### ⛔ Blocked on external data (drop the file in `data/raw/` and it can be wired up)
+
+- A religious **practice-intensity** measure (attendance / prayer / importance). Pew's pages 403 or render via JS — needs the RLS microdata download.
+- **County-level** analysis. Needs a county religiosity source (ARDA / U.S. Religion Census, manual download); county firearm and covariates are already available from CDC/Census.
+- A **direct gun-ownership** series (RAND HFR) and **gun-policy** indices — RAND's file is access-gated.
 
 ---
 
