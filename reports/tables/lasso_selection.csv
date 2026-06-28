@@ -1,0 +1,8 @@
+outcome,alpha,religiosity_coef,religiosity_kept,n_predictors_kept
+firearm_death_rate_2024,0.1325695581955807,0.0,False,3
+firearm_homicide_rate_2024,0.060551793223194324,0.0,False,6
+firearm_suicide_rate_2024,0.039308270306558896,-0.11280579912236018,True,7
+adult_obesity_pct_2024,0.006405978789887656,0.07354353753853897,True,10
+literacy_avg_score,0.0037546428096358834,-0.01937679144276956,True,10
+numeracy_avg_score,0.0024476593072839297,-0.0032566042635950514,True,10
+imprisonment_rate_2023_all_ages,0.03308402548179667,0.0,False,8
