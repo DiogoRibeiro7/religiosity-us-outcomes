@@ -1,0 +1,21 @@
+# Core analysis
+pandas==2.3.3
+numpy==2.3.5
+scipy==1.15.3
+statsmodels==0.14.5
+matplotlib==3.10.8
+
+# Data extraction (notebook 01)
+requests==2.32.4
+beautifulsoup4==4.13.4
+lxml==6.0.2
+tqdm==4.67.1
+pdfplumber          # optional: parses the BJS PDF; falls back to a curated table if absent
+
+# Bayesian multilevel model (notebook 03)
+pymc==6.0.1
+arviz==1.2.0
+
+# Notebook tooling
+nbformat==5.10.4
+jupyter

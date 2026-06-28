@@ -53,7 +53,7 @@ Three notebooks, run in order. They are deliberately notebooks, not a package, s
 
 **Notebook 03, Part 1 (descriptive):** missingness, Pearson/Spearman correlations, scatter plots, simple OLS, region-adjusted OLS.
 
-**Notebook 03, Part 2 (deeper analysis):** distributions, a full correlation heatmap, regional boxplots, region-coloured scatters, religiosity-vs-confounder checks, **covariate-adjusted regressions**, a model-comparison forest plot, partial correlations, FDR multiple-comparison control, bootstrap CIs, influence diagnostics, the **firearm homicide-vs-suicide split** with a gun-ownership analysis, a **hierarchical `MixedLM` model**, and a **Bayesian multilevel model (PyMC)**.
+**Notebook 03, Part 2 (deeper analysis):** distributions, a full correlation heatmap, regional boxplots, region-coloured scatters, religiosity-vs-confounder checks, **covariate-adjusted regressions**, a model-comparison forest plot, partial correlations, FDR multiple-comparison control, bootstrap CIs, influence diagnostics, the **firearm homicide-vs-suicide split** with a gun-ownership analysis, a **hierarchical `MixedLM` model**, a **Bayesian multilevel model (PyMC)**, and a **robustness check across religiosity measures**.
 
 ### Data sources
 
@@ -103,8 +103,9 @@ All figures live in [`reports/figures/`](reports/figures/) and all result tables
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
-pip install pandas numpy requests beautifulsoup4 lxml matplotlib scipy \
-            statsmodels tqdm pdfplumber nbformat pymc arviz
+pip install -r requirements.txt
+# (equivalently: pip install pandas numpy requests beautifulsoup4 lxml matplotlib
+#  scipy statsmodels tqdm pdfplumber nbformat pymc arviz)
 ```
 
 Then run the three notebooks in order (e.g. `jupyter lab`, or
@@ -146,12 +147,12 @@ Then run the three notebooks in order (e.g. `jupyter lab`, or
 - ✅ Hierarchical random-intercept model (`statsmodels` MixedLM).
 - ✅ Bayesian multilevel model with covariates (`PyMC`).
 - ✅ Median household income and median age (Census ACS — set `CENSUS_API_KEY`).
+- ✅ Robustness across multiple religiosity operationalisations (affiliated / atheist / agnostic / "nothing in particular").
 
-**Open**
+**Open** (blocked on data access)
 
-- A religious **practice-intensity** measure (the Pew pages don't expose the practice numbers in a scrapable form; needs the RLS microdata).
-- **County-level** analysis (needs a county religiosity source such as the ARDA / U.S. Religion Census).
-- Robustness checks across multiple religiosity measures.
+- A religious **practice-intensity** measure — Pew does not expose the attendance/prayer/importance numbers in a machine-readable form (the live pages 403 or render via JS; would need the RLS microdata).
+- **County-level** analysis — needs a county religiosity source such as the ARDA / U.S. Religion Census (manual download, not an open API).
 
 ---
 
