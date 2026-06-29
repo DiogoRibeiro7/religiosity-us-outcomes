@@ -155,13 +155,13 @@ Every column in the analytical panel is documented in [`docs/DATA_DICTIONARY.md`
 - Covariate-adjusted regressions, partial correlations, FDR control, bootstrap CIs, influence diagnostics.
 - **Hierarchical** `MixedLM` and **Bayesian** (`PyMC`) multilevel models.
 - **Robustness** across religiosity operationalisations (affiliated / atheist / agnostic / "nothing in particular").
-- **Diagnostics & sensitivity** (Part 3): VIF multicollinearity, religiosity × region interactions, **LASSO / ridge / elastic-net** variable selection, a missing-obesity imputation sensitivity test, and a **spatial-autocorrelation (Moran's I)** check showing the model residuals carry no leftover geographic signal.
+- **Diagnostics & sensitivity** (Part 3): VIF multicollinearity, religiosity × region interactions, **LASSO / ridge / elastic-net** variable selection, a missing-obesity imputation sensitivity test, a **spatial-autocorrelation (Moran's I)** check (residuals carry no leftover geographic signal), robustness to **functional form** (raw / log / rank), and an **SLX** spatial-lag model.
 - Repo: data dictionary, pinned `requirements.txt`, MIT license.
 
 ### 🔜 Refinements (no new data needed — open to PRs)
 
-- Explicit spatial models (geographically-weighted regression, or a CAR/SAR spatial-error model).
-- Alternative outcome transformations / functional forms.
+- A maximum-likelihood **CAR/SAR spatial-error** model — explored but not stably identified at n = 50 (its spatial parameter hits the boundary and flips with the neighbour count); would benefit from a larger unit set (e.g. counties).
+- Geographically-weighted regression (`mgwr`) for spatially-varying coefficients.
 
 ### ⛔ Blocked on external data (drop the file in `data/raw/` and it can be wired up)
 
